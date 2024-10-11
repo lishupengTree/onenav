@@ -131,13 +131,12 @@
 			<div class="search-main-w">
 				<div class="search-main">
 					<div class="search-input">
-						<input type="text" class="kw" name="search" id="search" value="" class="kw" placeholder="回车键百度搜索" autocomplete="off" />
+						<input type="text" class="kw" name="search" id="search" value="" class="kw" placeholder="回车搜索" autocomplete="off" />
 						<button class="search-bendi"><i class="iconfont icon-sousuo"></i></button>
 					</div>
 					<div class="search-btnlist">
 						<button class="search-btn" data-url="https://www.baidu.com/s?ie=UTF-8&wd=">
-							<img src="templates/<?php echo $template; ?>/images/icon/baidu.svg" />
-							百度搜索</button>
+							<img src="templates/<?php echo $template; ?>/images/icon/google.svg" />谷歌搜索
 						<button class="search-change"><i class="iconfont icon-xiangxia"></i></button>
 						<div class="search-lists hide">
 							<div class="list" data-url="https://www.google.com/search?q=">
