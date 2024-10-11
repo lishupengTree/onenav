@@ -209,7 +209,7 @@
 					<?php
 					foreach ($links as $link) {
 					//默认描述
-					$link['description'] = empty($link['description']) ? '作者很懒，没有填写描述。' : $link['description'];
+					$link['description'] = empty($link['description']) ? '&nbsp;' : $link['description'];
 
 					//直链模式
 					if( $site['link_model'] === 'direct' ) {
