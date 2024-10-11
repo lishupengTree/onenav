@@ -169,7 +169,8 @@ layui.use(['element','table','layer','form','upload','iconHhysFa'], function(){
   //渲染链接列表
   table.render({
     elem: '#link_list'
-    ,height: 530
+    ,height: 930
+    ,limit: 90
     ,url: 'index.php?c=api&method=link_list' //数据接口
     ,method: 'post'
     ,page: true //开启分页
@@ -191,11 +192,11 @@ layui.use(['element','table','layer','form','upload','iconHhysFa'], function(){
       }}
       // ,{field: 'fid', title: '分类ID',sort:true, width:90}
       ,{field: 'category_name', title: '所属分类',sort:true,width:120}
-      ,{field: 'url', title: 'URL',width:140,templet:function(d){
+      ,{field: 'url', title: 'URL',width:240,templet:function(d){
         var url = '<a target = "_blank" href = "' + d.url + '" title = "' + d.url + '">' + d.url + '</a>';
         return url;
       }}
-      ,{field: 'title', title: '链接标题', width:140,edit: 'text'}
+      ,{field: 'title', title: '链接标题', width:240,edit: 'text'}
       ,{field: 'add_time', title: '添加时间', width:148, sort: true,templet:function(d){
         var add_time = timestampToTime(d.add_time);
         return add_time;
@@ -503,7 +504,8 @@ layui.use(['element','table','layer','form','upload','iconHhysFa'], function(){
     //表格重载
     var tableIns = table.render({
       elem: '#link_list'
-      ,height: 520
+      ,height: 930
+      ,limit: 90
       ,url: 'index.php?c=api&method=q_category_link' //数据接口
       ,method: 'post'
       ,page: true //开启分页
@@ -528,11 +530,11 @@ layui.use(['element','table','layer','form','upload','iconHhysFa'], function(){
         }}
         // ,{field: 'fid', title: '分类ID',sort:true, width:90}
         ,{field: 'category_name', title: '所属分类',sort:true,width:120}
-        ,{field: 'url', title: 'URL',width:140,templet:function(d){
+        ,{field: 'url', title: 'URL',width:240,templet:function(d){
           var url = '<a target = "_blank" href = "' + d.url + '" title = "' + d.url + '">' + d.url + '</a>';
           return url;
         }}
-        ,{field: 'title', title: '链接标题', width:140,edit: 'text'}
+        ,{field: 'title', title: '链接标题', width:240,edit: 'text'}
         ,{field: 'add_time', title: '添加时间', width:148, sort: true,templet:function(d){
           var add_time = timestampToTime(d.add_time);
           return add_time;
