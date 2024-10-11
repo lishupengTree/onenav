@@ -94,7 +94,8 @@ layui.use(['element','table','layer','form','upload','iconHhysFa'], function(){
   table.render({
     elem: '#category_list',
     toolbar: '#catToolbar',
-    height: 525
+    height: 930
+    ,limit: 90
     ,url: 'index.php?c=api&method=category_list' //数据接口
     ,page: true //开启分页
     ,cols: [[ //表头
